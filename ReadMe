@@ -1,27 +1,16 @@
-<div align="center">
-
 # 🧠 Brain Tumor Detector & Classifier
 
-### Deep Learning-Powered MRI Scan Analysis
+> Deep Learning-Powered MRI Scan Analysis
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.0+-orange.svg)](https://www.tensorflow.org/)
-[![Flask](https://img.shields.io/badge/Flask-2.0+-green.svg)](https://flask.palletsprojects.com/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-
-*An intelligent web application that classifies brain tumors from MRI scans using transfer learning and VGG16 architecture*
-
-[Features](#-features) • [Demo](#-demo) • [Installation](#-installation) • [Usage](#-usage) • [Model](#-model-architecture) • [Contributing](#-contributing)
-
-</div>
+An intelligent web application that classifies brain tumors from MRI scans using transfer learning and VGG16 architecture.
 
 ---
 
 ## ⚠️ Medical Disclaimer
 
-> **IMPORTANT:** This project is intended **strictly for educational and research purposes only.**  
-> It is **NOT a medical diagnostic tool** and must **never** be used for clinical or professional healthcare decisions.  
-> Always consult a qualified medical practitioner for any medical concerns.
+**IMPORTANT:** This project is intended **strictly for educational and research purposes only.**  
+It is **NOT a medical diagnostic tool** and must **never** be used for clinical or professional healthcare decisions.  
+Always consult a qualified medical practitioner for any medical concerns.
 
 ---
 
@@ -40,43 +29,23 @@ Built with Flask and TensorFlow, this application provides an intuitive web inte
 
 ## ✨ Features
 
-| Feature | Description |
-|---------|-------------|
-| 🎯 **Multi-Class Classification** | Accurately classifies MRI scans into 4 distinct categories |
-| 📊 **Confidence Scoring** | Displays prediction confidence as a percentage |
-| 📋 **Medical Summaries** | Provides educational information about each tumor type |
-| 👨‍⚕️ **Specialist Recommendations** | Suggests appropriate medical specialists for consultation |
-| 🎨 **Clean UI/UX** | Modern, responsive web interface for easy interaction |
-| ⚡ **Fast Predictions** | Quick inference time for real-time classification |
-
----
-
-## 🎬 Demo
-
-### Web Interface
-```
-1. Upload MRI Image → 2. Classify → 3. View Results
-```
-
-**Sample Output:**
-- **Prediction:** Glioma Tumor
-- **Confidence:** 94.7%
-- **Recommendation:** Consult a Neurologist or Neurosurgeon
+- 🎯 **Multi-Class Classification** - Accurately classifies MRI scans into 4 distinct categories
+- 📊 **Confidence Scoring** - Displays prediction confidence as a percentage
+- 📋 **Medical Summaries** - Provides educational information about each tumor type
+- 👨‍⚕️ **Specialist Recommendations** - Suggests appropriate medical specialists for consultation
+- 🎨 **Clean UI/UX** - Modern, responsive web interface for easy interaction
+- ⚡ **Fast Predictions** - Quick inference time for real-time classification
 
 ---
 
 ## 🛠️ Tech Stack
 
-<div align="center">
-
 | Layer | Technology |
-|:-----:|:----------:|
-| **Backend** | ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white) ![Flask](https://img.shields.io/badge/-Flask-000000?style=flat&logo=flask&logoColor=white) |
-| **ML Framework** | ![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white) ![Keras](https://img.shields.io/badge/-Keras-D00000?style=flat&logo=keras&logoColor=white) |
-| **Image Processing** | ![OpenCV](https://img.shields.io/badge/-OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white) Pillow |
-| **Frontend** | ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) |
-
-</div>
+|-------|------------|
+| **Backend** | Python, Flask |
+| **ML Framework** | TensorFlow, Keras |
+| **Image Processing** | OpenCV, Pillow |
+| **Frontend** | HTML5, CSS3, JavaScript |
 
 ---
 
@@ -99,13 +68,13 @@ cd BrainTumorDetection
 
 **2. Create Virtual Environment**
 
-*Windows:*
+Windows:
 ```bash
 python -m venv venv
 venv\Scripts\activate
 ```
 
-*macOS/Linux:*
+macOS/Linux:
 ```bash
 python3 -m venv venv
 source venv/bin/activate
@@ -140,17 +109,9 @@ Open your browser and navigate to: **http://127.0.0.1:5000/**
 
 ## 📖 Usage
 
-1. **Upload MRI Image**  
-   Click "Choose an MRI Image" and select a `.jpg`, `.png`, or `.jpeg` file
-
-2. **Classify**  
-   Click the "Classify Tumor" button
-
-3. **View Results**  
-   - Predicted tumor type
-   - Confidence percentage
-   - Medical description
-   - Specialist recommendation
+1. **Upload MRI Image** - Click "Choose an MRI Image" and select a `.jpg`, `.png`, or `.jpeg` file
+2. **Classify** - Click the "Classify Tumor" button
+3. **View Results** - See predicted tumor type, confidence percentage, medical description, and specialist recommendation
 
 ---
 
@@ -176,11 +137,7 @@ Softmax Output (4 Classes)
 - **Optimizer:** Adam
 - **Loss Function:** Categorical Crossentropy
 
-### Model Performance
-
-The model achieves high accuracy on the validation set after fine-tuning. 
-
-> **Note:** A pre-trained model is included at `model/brain_tumor_model.h5`
+**Note:** A pre-trained model is included at `model/brain_tumor_model.h5`
 
 ---
 
@@ -233,13 +190,12 @@ brain-tumor-detector/
 
 ## 🔮 Future Enhancements
 
-- [ ] **Grad-CAM Visualization** - Visual explanations for model predictions
-- [ ] **PDF Report Generation** - Downloadable patient reports
-- [ ] **Multi-Modal Support** - Support for different MRI sequences (T1, T2, FLAIR)
-- [ ] **Model Ensemble** - Combine multiple models for improved accuracy
-- [ ] **REST API** - Enable programmatic access
-- [ ] **Batch Processing** - Analyze multiple images simultaneously
-- [ ] **Performance Metrics Dashboard** - Real-time model analytics
+- [ ] Grad-CAM Visualization - Visual explanations for model predictions
+- [ ] PDF Report Generation - Downloadable patient reports
+- [ ] Multi-Modal Support - Support for different MRI sequences (T1, T2, FLAIR)
+- [ ] Model Ensemble - Combine multiple models for improved accuracy
+- [ ] REST API - Enable programmatic access
+- [ ] Batch Processing - Analyze multiple images simultaneously
 
 ---
 
@@ -283,12 +239,6 @@ If you use this project in your research, please cite:
 
 ---
 
-<div align="center">
-
-### ⭐ If you find this project useful, please consider giving it a star!
-
 **Made with ❤️ for the ML and Healthcare community**
 
-[⬆ Back to Top](#-brain-tumor-detector--classifier)
-
-</div>
+⭐ If you find this project useful, please consider giving it a star!
